@@ -1,7 +1,7 @@
 package simpleproject;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -18,8 +18,8 @@ public class NewTest {
 	  @BeforeClass
 	  public void beforeClass() {
 	   
-	   System.setProperty("webdriver.gecko.driver", "E:\\gitworkspace\\SimpleProject\\drivers\\geckodriver.exe");
-	   driver = new FirefoxDriver();
+	   System.setProperty("webdriver.chrome.driver", "E:\\gitworkspace\\SimpleProject\\drivers\\chromedriver.exe");
+	   driver = new ChromeDriver();
 	   
 	  }
 	 
